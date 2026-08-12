@@ -1,0 +1,8 @@
+# Design related files and folders
+.agents/
+.claude/
+.impeccable/
+ieeesbcectl-inspo-website/
+ABOUT.md
+CONTEXT.md
+PRODUCT.md

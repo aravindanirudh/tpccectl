@@ -1,0 +1,913 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Training and Placement Cell - College of Engineering, Cherthala" />
+    <meta
+      name="description"
+      content="The official website of the Training and Placement Cell (TPC), College of Engineering, Cherthala (CEC). Empowering students for a brighter career path through aptitude training, mock interviews, and strong placement records."
+    />
+    <meta name="geo.region" content="IN-KL" />
+    <meta name="geo.placename" content="Cherthala, Kerala" />
+    <title>Training &amp; Placement Cell - CEC Cherthala</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/avif" href="./assets/tpc-logo.avif" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Preload hero assets -->
+    <link rel="preload" as="image" href="./assets/tpc-logo.avif" />
+  </head>
+
+  <body>
+    <!-- ================================================
+         NAVBAR
+         ================================================ -->
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="navbar__inner">
+        <!-- Logos -->
+        <div class="navbar__logos">
+          <a href="#hero" aria-label="TPC Home">
+            <img
+              class="navbar__logo-img"
+              src="./assets/tpc-logo.avif"
+              alt="TPC logo"
+              width="40"
+              height="40"
+            />
+          </a>
+          <div class="navbar__divider" aria-hidden="true"></div>
+          <a href="https://cectl.ac.in" target="_blank" rel="noopener" aria-label="CEC website">
+            <img
+              class="navbar__logo-img"
+              src="./assets/cec-logo.avif"
+              alt="College of Engineering Cherthala logo"
+              width="40"
+              height="40"
+            />
+          </a>
+        </div>
+
+        <!-- Brand text -->
+        <div class="navbar__brand">
+          <div class="navbar__name">Training &amp; Placement Cell</div>
+          <div class="navbar__sub">CEC Cherthala</div>
+        </div>
+
+        <!-- Desktop links -->
+        <ul class="navbar__links" role="list">
+          <li><a href="#about" class="navbar__link">About</a></li>
+          <li><a href="#posters" class="navbar__link">Placements</a></li>
+          <li><a href="#gallery" class="navbar__link">Activities</a></li>
+          <li><a href="#execom" class="navbar__link">Team</a></li>
+          <li><a href="#contact" class="navbar__link">Contact</a></li>
+        </ul>
+
+        <!-- Hamburger -->
+        <button
+          class="navbar__hamburger"
+          id="nav-hamburger"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="nav-drawer"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile drawer -->
+    <div class="navbar__mobile-drawer" id="nav-drawer" role="dialog" aria-modal="true" aria-label="Navigation menu">
+      <button class="drawer-close" id="drawer-close" aria-label="Close navigation menu">&times;</button>
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#posters">Placements</a>
+      <a href="#gallery">Activities</a>
+      <a href="#execom">Team</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <!-- ================================================
+         HERO
+         ================================================ -->
+    <section class="hero" id="hero" aria-labelledby="hero-heading">
+      <div class="hero__inner">
+
+        <!-- Institutional badge -->
+        <div class="hero__badge">
+          <span class="hero__badge-line"></span>
+          <span class="hero__badge-text">College of Engineering, Cherthala</span>
+        </div>
+
+        <!-- Headline -->
+        <h1 class="hero__headline" id="hero-heading">
+          Empowering Students<br>for a <em>Brighter</em> Career.
+        </h1>
+
+        <p class="hero__tagline">
+          The Training &amp; Placement Cell bridges talented engineers with industry leaders -
+          through aptitude training, mock interviews, and real placement opportunities.
+        </p>
+
+        <!-- CTAs -->
+        <div class="hero__actions">
+          <a href="#posters" class="btn-primary" id="hero-cta-placements">
+            View Placements
+          </a>
+          <a href="#contact" class="btn-primary" id="hero-cta-contact">Contact TPC</a>
+        </div>
+
+      </div>
+
+      <!-- Scroll hint -->
+      <div class="hero__scroll-hint" aria-hidden="true">
+        <span class="hero__scroll-line"></span>
+      </div>
+
+    </section>
+
+    <!-- ================================================
+         STATS BAR (crimson strip - only placement stats shown here)
+         ================================================ -->
+    <div class="stats-bar" role="region" aria-label="Key placement statistics">
+      <div class="stats-bar__inner">
+        <div class="stat-item">
+          <div class="stat-item__number"><span data-count="1478" data-suffix="+">1478+</span></div>
+          <div class="stat-item__label">Total Placed</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-item__number"><span data-count="56" data-suffix="+">56+</span></div>
+          <div class="stat-item__label">Companies Visited</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-item__number">&#8377;<span data-count="5" data-suffix=" LPA">5 LPA</span></div>
+          <div class="stat-item__label">Avg Package</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-item__number">&#8377;<span data-count="20" data-suffix=" LPA">20 LPA</span></div>
+          <div class="stat-item__label">Highest Package</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================================================
+         ABOUT / TPO MESSAGE
+         ================================================ -->
+    <section class="section about-section" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="about-grid">
+          <!-- Left: About text -->
+          <div class="about-text reveal">
+            <p class="section-label" aria-hidden="true">About TPC</p>
+            <h2 class="section-title" id="about-heading">
+              A Professional Body Dedicated to Student Success
+            </h2>
+            <p>
+              The Training and Placement Cell is a professional body of the institute coordinated
+              by student representatives under the able guidance of the Principal and faculty.
+              Our main aim is to provide opportunities for technical as well as soft skill
+              development to students in order to improve their employability.
+            </p>
+            <p>
+              TPC provides all assistance to students to achieve their career goals - from
+              intensive aptitude training to live industry interactions and placement drives
+              with leading companies.
+            </p>
+
+            <div class="about-activities">
+              <div class="about-activities__label">Training Programs</div>
+              <div class="about-activities__tags">
+                <span class="tag">Aptitude Training</span>
+                <span class="tag">Quantitative Aptitude</span>
+                <span class="tag">Logical Reasoning</span>
+                <span class="tag">Technical Aptitude</span>
+                <span class="tag">Weekly Aptitude Tests</span>
+                <span class="tag">Resume Preparation</span>
+                <span class="tag">Interview Dynamics</span>
+                <span class="tag">Mock Interviews</span>
+                <span class="tag">Essential Geometry</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: TPO card -->
+          <div class="reveal reveal-delay-2">
+            <div class="tpo-card">
+              <!-- TPO photo: object-position: center in CSS so full face is visible -->
+              <img
+                class="tpo-card__image"
+                src="./assets/execom/Elizwa-Laiju_TPO.avif"
+                alt="Mrs. Elizwa Laiju - Training and Placement Officer, CEC Cherthala"
+                loading="lazy"
+              />
+              <div class="tpo-card__body">
+                <blockquote class="tpo-card__quote">
+                  Training and Placement Cell aims to equip the students with the necessary
+                  skillset by giving training in emerging areas and also helps the students
+                  to kick start their career by providing ample placement opportunities.
+                  Our excellent placement record is a fine testament to the corporate outreach
+                  that we could establish over the years.
+                </blockquote>
+                <div class="tpo-card__meta">
+                  <div class="tpo-card__name">Mrs. Elizwa Laiju</div>
+                  <div class="tpo-card__role">Training and Placement Officer, CEC Cherthala</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================
+         PLACEMENT POSTERS - SINGLE HORIZONTAL SCROLL RAIL
+         ================================================ -->
+    <section class="section posters-section" id="posters" aria-labelledby="posters-heading">
+      <div class="container">
+        <p class="section-label reveal" aria-hidden="true">Placement Posters</p>
+        <h2 class="section-title reveal" id="posters-heading">
+          Celebrating Every Placement
+        </h2>
+        <p class="reveal" style="font-size:0.8125rem; color:var(--color-muted); display:flex; align-items:center; gap:0.5rem; margin-top:-0.75rem;">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 8h14M10 4l4 4-4 4"/></svg>
+          Scroll to explore all posters
+        </p>
+      </div>
+
+      <!-- All posters in one unified horizontal scroll rail -->
+      <div class="poster-rail-scroll" role="region" aria-label="Placement posters scroll gallery" style="margin-top: 2rem;">
+        <!-- 2026 -->
+        <div class="poster-item">
+          <img
+            src="./assets/large-posters/placement-poster-2026.avif"
+            alt="Placement poster - 2026"
+            loading="lazy"
+          />
+        </div>
+
+        <!-- 2025 -->
+        <div class="poster-item">
+          <img
+            src="./assets/large-posters/placement-poster-2025.avif"
+            alt="Placement poster - 2025"
+            loading="lazy"
+          />
+        </div>
+
+        <!-- 2024 large posters -->
+        <div class="poster-item">
+          <img
+            src="./assets/large-posters/placement-poster-2024-1.avif"
+            alt="Placement poster 1 - 2024"
+            loading="lazy"
+          />
+        </div>
+        <div class="poster-item">
+          <img
+            src="./assets/large-posters/placement-poster-2024-2.avif"
+            alt="Placement poster 2 - 2024"
+            loading="lazy"
+          />
+        </div>
+        <div class="poster-item">
+          <img
+            src="./assets/large-posters/placement-poster-2024-3.avif"
+            alt="Placement poster 3 - 2024"
+            loading="lazy"
+          />
+        </div>
+
+        <!-- Small posters (highlight cards) -->
+        <div class="poster-item">
+          <img
+            src="./assets/small-posters/small-placement-poster-1.avif"
+            alt="Placement highlight poster 1"
+            loading="lazy"
+          />
+        </div>
+        <div class="poster-item">
+          <img
+            src="./assets/small-posters/small-placement-poster-2.avif"
+            alt="Placement highlight poster 2"
+            loading="lazy"
+          />
+        </div>
+        <div class="poster-item">
+          <img
+            src="./assets/small-posters/small-placement-poster-3.avif"
+            alt="Placement highlight poster 3"
+            loading="lazy"
+          />
+        </div>
+        <div class="poster-item">
+          <img
+            src="./assets/small-posters/small-placement-poster-4.avif"
+            alt="Placement highlight poster 4"
+            loading="lazy"
+          />
+        </div>
+        <div class="poster-item">
+          <img
+            src="./assets/small-posters/small-placement-poster-5.avif"
+            alt="Placement highlight poster 5"
+            loading="lazy"
+          />
+        </div>
+        <div class="poster-item">
+          <img
+            src="./assets/small-posters/small-placement-poster-6.avif"
+            alt="Placement highlight poster 6"
+            loading="lazy"
+          />
+        </div>
+        <div class="poster-item">
+          <img
+            src="./assets/small-posters/small-placement-poster-7.avif"
+            alt="Placement highlight poster 7"
+            loading="lazy"
+          />
+        </div>
+
+        <!-- 2023 -->
+        <div class="poster-item">
+          <img
+            src="./assets/large-posters/placement-poster-2023.avif"
+            alt="Placement poster - 2023"
+            loading="lazy"
+          />
+        </div>
+
+        <!-- 2022 -->
+        <div class="poster-item">
+          <img
+            src="./assets/large-posters/placement-poster-2022-1.avif"
+            alt="Placement poster 1 - 2022"
+            loading="lazy"
+          />
+        </div>
+        <div class="poster-item">
+          <img
+            src="./assets/large-posters/placement-poster-2022-2.avif"
+            alt="Placement poster 2 - 2022"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================
+         PLACEMENT STATISTICS - PDF LINKS
+         Year-wise: 2010-11 through 2024-25 (2021-22 not available)
+         ================================================ -->
+    <section class="section pdf-section" id="stats" aria-labelledby="stats-heading">
+      <div class="container">
+        <p class="section-label reveal" aria-hidden="true">Placement Reports</p>
+        <h2 class="section-title reveal" id="stats-heading">Year-wise Placement Statistics</h2>
+
+        <div class="pdf-grid">
+
+          <!-- 2024-25 -->
+          <div class="pdf-card reveal">
+            <div class="pdf-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 1.5L18.5 9H13V3.5z"/>
+              </svg>
+            </div>
+            <div class="pdf-card__year">2024 - 25</div>
+            <div class="pdf-card__desc">Annual placement statistics for the 2024-25 academic year.</div>
+            <a href="./assets/pdfs/stats-2024-25.pdf" class="pdf-card__btn" target="_blank" rel="noopener" aria-label="Download 2024-25 placement report PDF">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 1v9M4 7l4 4 4-4M2 14h12"/></svg>
+              Download PDF
+            </a>
+          </div>
+
+          <!-- 2023-24 -->
+          <div class="pdf-card reveal reveal-delay-1">
+            <div class="pdf-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 1.5L18.5 9H13V3.5z"/>
+              </svg>
+            </div>
+            <div class="pdf-card__year">2023 - 24</div>
+            <div class="pdf-card__desc">Annual placement statistics for the 2023-24 academic year.</div>
+            <a href="./assets/pdfs/stats-2023-24.pdf" class="pdf-card__btn" target="_blank" rel="noopener" aria-label="Download 2023-24 placement report PDF">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 1v9M4 7l4 4 4-4M2 14h12"/></svg>
+              Download PDF
+            </a>
+          </div>
+
+          <!-- 2022-23 -->
+          <div class="pdf-card reveal reveal-delay-2">
+            <div class="pdf-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 1.5L18.5 9H13V3.5z"/>
+              </svg>
+            </div>
+            <div class="pdf-card__year">2022 - 23</div>
+            <div class="pdf-card__desc">Annual placement statistics for the 2022-23 academic year.</div>
+            <a href="./assets/pdfs/stats-2022-23.pdf" class="pdf-card__btn" target="_blank" rel="noopener" aria-label="Download 2022-23 placement report PDF">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 1v9M4 7l4 4 4-4M2 14h12"/></svg>
+              Download PDF
+            </a>
+          </div>
+
+          <!-- 2021-22: NOT AVAILABLE - skipped -->
+
+          <!-- 2020-21 -->
+          <div class="pdf-card reveal reveal-delay-3">
+            <div class="pdf-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 1.5L18.5 9H13V3.5z"/>
+              </svg>
+            </div>
+            <div class="pdf-card__year">2020 - 21</div>
+            <div class="pdf-card__desc">Annual placement statistics for the 2020-21 academic year.</div>
+            <a href="./assets/pdfs/stats-2020-21.pdf" class="pdf-card__btn" target="_blank" rel="noopener" aria-label="Download 2020-21 placement report PDF">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 1v9M4 7l4 4 4-4M2 14h12"/></svg>
+              Download PDF
+            </a>
+          </div>
+
+          <!-- 2019-20 -->
+          <div class="pdf-card reveal">
+            <div class="pdf-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 1.5L18.5 9H13V3.5z"/>
+              </svg>
+            </div>
+            <div class="pdf-card__year">2019 - 20</div>
+            <div class="pdf-card__desc">Annual placement statistics for the 2019-20 academic year.</div>
+            <a href="./assets/pdfs/stats-2019-20.pdf" class="pdf-card__btn" target="_blank" rel="noopener" aria-label="Download 2019-20 placement report PDF">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 1v9M4 7l4 4 4-4M2 14h12"/></svg>
+              Download PDF
+            </a>
+          </div>
+
+          <!-- 2018-19 -->
+          <div class="pdf-card reveal reveal-delay-1">
+            <div class="pdf-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 1.5L18.5 9H13V3.5z"/>
+              </svg>
+            </div>
+            <div class="pdf-card__year">2018 - 19</div>
+            <div class="pdf-card__desc">Annual placement statistics for the 2018-19 academic year.</div>
+            <a href="./assets/pdfs/stats-2018-19.pdf" class="pdf-card__btn" target="_blank" rel="noopener" aria-label="Download 2018-19 placement report PDF">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 1v9M4 7l4 4 4-4M2 14h12"/></svg>
+              Download PDF
+            </a>
+          </div>
+
+          <!-- 2017-18 -->
+          <div class="pdf-card reveal reveal-delay-2">
+            <div class="pdf-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 1.5L18.5 9H13V3.5z"/>
+              </svg>
+            </div>
+            <div class="pdf-card__year">2017 - 18</div>
+            <div class="pdf-card__desc">Annual placement statistics for the 2017-18 academic year.</div>
+            <a href="./assets/pdfs/stats-2017-18.pdf" class="pdf-card__btn" target="_blank" rel="noopener" aria-label="Download 2017-18 placement report PDF">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 1v9M4 7l4 4 4-4M2 14h12"/></svg>
+              Download PDF
+            </a>
+          </div>
+
+          <!-- 2016-17 -->
+          <div class="pdf-card reveal reveal-delay-3">
+            <div class="pdf-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 1.5L18.5 9H13V3.5z"/>
+              </svg>
+            </div>
+            <div class="pdf-card__year">2016 - 17</div>
+            <div class="pdf-card__desc">Annual placement statistics for the 2016-17 academic year.</div>
+            <a href="./assets/pdfs/stats-2016-17.pdf" class="pdf-card__btn" target="_blank" rel="noopener" aria-label="Download 2016-17 placement report PDF">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 1v9M4 7l4 4 4-4M2 14h12"/></svg>
+              Download PDF
+            </a>
+          </div>
+
+          <!-- 2015-16 -->
+          <div class="pdf-card reveal">
+            <div class="pdf-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 1.5L18.5 9H13V3.5z"/>
+              </svg>
+            </div>
+            <div class="pdf-card__year">2015 - 16</div>
+            <div class="pdf-card__desc">Annual placement statistics for the 2015-16 academic year.</div>
+            <a href="./assets/pdfs/stats-2015-16.pdf" class="pdf-card__btn" target="_blank" rel="noopener" aria-label="Download 2015-16 placement report PDF">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 1v9M4 7l4 4 4-4M2 14h12"/></svg>
+              Download PDF
+            </a>
+          </div>
+
+          <!-- 2014-15 -->
+          <div class="pdf-card reveal reveal-delay-1">
+            <div class="pdf-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 1.5L18.5 9H13V3.5z"/>
+              </svg>
+            </div>
+            <div class="pdf-card__year">2014 - 15</div>
+            <div class="pdf-card__desc">Annual placement statistics for the 2014-15 academic year.</div>
+            <a href="./assets/pdfs/stats-2014-15.pdf" class="pdf-card__btn" target="_blank" rel="noopener" aria-label="Download 2014-15 placement report PDF">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 1v9M4 7l4 4 4-4M2 14h12"/></svg>
+              Download PDF
+            </a>
+          </div>
+
+          <!-- 2013-14 -->
+          <div class="pdf-card reveal reveal-delay-2">
+            <div class="pdf-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 1.5L18.5 9H13V3.5z"/>
+              </svg>
+            </div>
+            <div class="pdf-card__year">2013 - 14</div>
+            <div class="pdf-card__desc">Annual placement statistics for the 2013-14 academic year.</div>
+            <a href="./assets/pdfs/stats-2013-14.pdf" class="pdf-card__btn" target="_blank" rel="noopener" aria-label="Download 2013-14 placement report PDF">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 1v9M4 7l4 4 4-4M2 14h12"/></svg>
+              Download PDF
+            </a>
+          </div>
+
+          <!-- 2012-13 -->
+          <div class="pdf-card reveal reveal-delay-3">
+            <div class="pdf-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 1.5L18.5 9H13V3.5z"/>
+              </svg>
+            </div>
+            <div class="pdf-card__year">2012 - 13</div>
+            <div class="pdf-card__desc">Annual placement statistics for the 2012-13 academic year.</div>
+            <a href="./assets/pdfs/stats-2012-13.pdf" class="pdf-card__btn" target="_blank" rel="noopener" aria-label="Download 2012-13 placement report PDF">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 1v9M4 7l4 4 4-4M2 14h12"/></svg>
+              Download PDF
+            </a>
+          </div>
+
+          <!-- 2011-12 -->
+          <div class="pdf-card reveal">
+            <div class="pdf-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 1.5L18.5 9H13V3.5z"/>
+              </svg>
+            </div>
+            <div class="pdf-card__year">2011 - 12</div>
+            <div class="pdf-card__desc">Annual placement statistics for the 2011-12 academic year.</div>
+            <a href="./assets/pdfs/stats-2011-12.pdf" class="pdf-card__btn" target="_blank" rel="noopener" aria-label="Download 2011-12 placement report PDF">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 1v9M4 7l4 4 4-4M2 14h12"/></svg>
+              Download PDF
+            </a>
+          </div>
+
+          <!-- 2010-11 -->
+          <div class="pdf-card reveal reveal-delay-1">
+            <div class="pdf-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 1.5L18.5 9H13V3.5z"/>
+              </svg>
+            </div>
+            <div class="pdf-card__year">2010 - 11</div>
+            <div class="pdf-card__desc">Annual placement statistics for the 2010-11 academic year.</div>
+            <a href="./assets/pdfs/stats-2010-11.pdf" class="pdf-card__btn" target="_blank" rel="noopener" aria-label="Download 2010-11 placement report PDF">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 1v9M4 7l4 4 4-4M2 14h12"/></svg>
+              Download PDF
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================
+         ACTIVITIES GALLERY
+         ================================================ -->
+    <section class="section gallery-section" id="gallery" aria-labelledby="gallery-heading">
+      <div class="container">
+        <p class="section-label reveal" aria-hidden="true">Gallery</p>
+        <h2 class="section-title reveal" id="gallery-heading">Gallery</h2>
+      </div>
+
+      <div class="container">
+        <div class="gallery-grid" role="list">
+          <div class="gallery-item reveal" role="listitem">
+            <img src="./assets/general-promo-images/gallery-1.avif" alt="TPC activity - placement training session" loading="lazy" />
+          </div>
+          <div class="gallery-item reveal reveal-delay-1" role="listitem">
+            <img src="./assets/general-promo-images/tpc-aptitude-training.avif" alt="TPC aptitude training session" loading="lazy" />
+          </div>
+          <div class="gallery-item reveal reveal-delay-2" role="listitem">
+            <img src="./assets/general-promo-images/gallery-2.avif" alt="TPC event gallery" loading="lazy" />
+          </div>
+          <div class="gallery-item reveal" role="listitem">
+            <img src="./assets/general-promo-images/tpc-resume-building.avif" alt="TPC resume building workshop" loading="lazy" />
+          </div>
+          <div class="gallery-item reveal reveal-delay-1" role="listitem">
+            <img src="./assets/general-promo-images/tpc-general-placement-drive.jpeg.avif" alt="TPC general placement drive" loading="lazy" />
+          </div>
+          <div class="gallery-item reveal reveal-delay-2" role="listitem">
+            <img src="./assets/general-promo-images/gallery-3.avif" alt="TPC activity gallery" loading="lazy" />
+          </div>
+          <div class="gallery-item reveal" role="listitem">
+            <img src="./assets/general-promo-images/tpc-trenser-placement-drive.avif" alt="TPC Trenser placement drive" loading="lazy" />
+          </div>
+          <div class="gallery-item reveal reveal-delay-1" role="listitem">
+            <img src="./assets/general-promo-images/tpc-gofree-lab-placement-drive.avif" alt="TPC GoFree Lab placement drive" loading="lazy" />
+          </div>
+          <div class="gallery-item reveal reveal-delay-2" role="listitem">
+            <img src="./assets/general-promo-images/gallery-4.avif" alt="TPC activities gallery" loading="lazy" />
+          </div>
+          <div class="gallery-item reveal" role="listitem">
+            <img src="./assets/general-promo-images/placement-infographics.avif" alt="TPC placement infographics" loading="lazy" />
+          </div>
+          <div class="gallery-item reveal reveal-delay-1" role="listitem">
+            <img src="./assets/general-promo-images/all-placement-companies.avif" alt="All placement companies - CEC" loading="lazy" />
+          </div>
+          <div class="gallery-item reveal reveal-delay-2" role="listitem">
+            <img src="./assets/general-promo-images/top_placements_poster.avif" alt="Top placements poster - CEC" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================
+         EXECOM MEMBERS
+         ================================================ -->
+    <section class="section execom-section" id="execom" aria-labelledby="execom-heading">
+      <div class="container">
+        <p class="section-label reveal" aria-hidden="true">Our Team</p>
+        <h2 class="section-title reveal" id="execom-heading">Executive Committee</h2>
+
+        <!-- Execom group (formerly Leadership) - now includes TPO Elizwa Laiju -->
+        <div class="execom-group">
+          <div class="execom-group__label">
+            <span class="execom-group__name">Execom</span>
+            <span class="execom-group__line" aria-hidden="true"></span>
+          </div>
+          <div class="execom-cards">
+            <!-- TPO -->
+            <div class="execom-card">
+              <img class="execom-card__photo" src="./assets/execom/Elizwa-Laiju_TPO.avif" alt="Mrs. Elizwa Laiju - Training and Placement Officer" loading="lazy" style="object-fit: contain; background: #252525;" />
+              <div class="execom-card__info">
+                <div class="execom-card__name">Mrs. Elizwa Laiju</div>
+                <div class="execom-card__role">Training and Placement Officer</div>
+              </div>
+            </div>
+            <div class="execom-card">
+              <img class="execom-card__photo" src="./assets/execom/Ajul-Chander-S_Student-Coordinator.avif" alt="Ajul Chander S - Student Coordinator" loading="lazy" />
+              <div class="execom-card__info">
+                <div class="execom-card__name">Ajul Chander S</div>
+                <div class="execom-card__role">Student Coordinator</div>
+              </div>
+            </div>
+            <div class="execom-card">
+              <img class="execom-card__photo" src="./assets/execom/Aishwarya-Lekshmi-P_Treasurer.avif" alt="Aishwarya Lekshmi P - Treasurer" loading="lazy" />
+              <div class="execom-card__info">
+                <div class="execom-card__name">Aishwarya Lekshmi P</div>
+                <div class="execom-card__role">Treasurer</div>
+              </div>
+            </div>
+            <div class="execom-card">
+              <img class="execom-card__photo" src="./assets/execom/A-J-Milan-Emmanuel_Documentation-Team.avif" alt="A J Milan Emmanuel - Documentation Team" loading="lazy" />
+              <div class="execom-card__info">
+                <div class="execom-card__name">A J Milan Emmanuel</div>
+                <div class="execom-card__role">Documentation Team</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Training and Development Team - Abhidev and Telsa first -->
+        <div class="execom-group">
+          <div class="execom-group__label">
+            <span class="execom-group__name">Training and Development</span>
+            <span class="execom-group__line" aria-hidden="true"></span>
+          </div>
+          <div class="execom-cards">
+            <div class="execom-card">
+              <img class="execom-card__photo" src="./assets/execom/Training-and-Development-Team/Abhidev-P-P_Training-and-Development-Team.avif" alt="Abhidev P P - Training and Development Team" loading="lazy" />
+              <div class="execom-card__info">
+                <div class="execom-card__name">Abhidev P P</div>
+                <div class="execom-card__role">Training and Development</div>
+              </div>
+            </div>
+            <div class="execom-card">
+              <img class="execom-card__photo" src="./assets/execom/Training-and-Development-Team/Telsa-Thomas_Training-and-Development-Team.avif" alt="Telsa Thomas - Training and Development Team" loading="lazy" />
+              <div class="execom-card__info">
+                <div class="execom-card__name">Telsa Thomas</div>
+                <div class="execom-card__role">Training and Development</div>
+              </div>
+            </div>
+            <div class="execom-card">
+              <img class="execom-card__photo" src="./assets/execom/Training-and-Development-Team/Benedicta-Benny_Training-and-Development-Team.avif" alt="Benedicta Benny - Training and Development Team" loading="lazy" />
+              <div class="execom-card__info">
+                <div class="execom-card__name">Benedicta Benny</div>
+                <div class="execom-card__role">Training and Development</div>
+              </div>
+            </div>
+            <div class="execom-card">
+              <img class="execom-card__photo" src="./assets/execom/Training-and-Development-Team/Nandhana-P-P_Training-and-Development-Team.avif" alt="Nandhana P P - Training and Development Team" loading="lazy" />
+              <div class="execom-card__info">
+                <div class="execom-card__name">Nandhana P P</div>
+                <div class="execom-card__role">Training and Development</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Logistics and Outreach Team -->
+        <div class="execom-group">
+          <div class="execom-group__label">
+            <span class="execom-group__name">Logistics and Outreach</span>
+            <span class="execom-group__line" aria-hidden="true"></span>
+          </div>
+          <div class="execom-cards">
+            <div class="execom-card">
+              <img class="execom-card__photo" src="./assets/execom/Logistics-and-Outreach-Team/Akhila-Sunilkumar_Logistics-and-Outreach-Team.avif" alt="Akhila Sunilkumar - Logistics and Outreach" loading="lazy" />
+              <div class="execom-card__info">
+                <div class="execom-card__name">Akhila Sunilkumar</div>
+                <div class="execom-card__role">Logistics and Outreach</div>
+              </div>
+            </div>
+            <div class="execom-card">
+              <img class="execom-card__photo" src="./assets/execom/Logistics-and-Outreach-Team/Anand-R-Nair_Logistics-and-Outreach-Team.avif" alt="Anand R Nair - Logistics and Outreach" loading="lazy" />
+              <div class="execom-card__info">
+                <div class="execom-card__name">Anand R Nair</div>
+                <div class="execom-card__role">Logistics and Outreach</div>
+              </div>
+            </div>
+            <div class="execom-card">
+              <img class="execom-card__photo" src="./assets/execom/Logistics-and-Outreach-Team/Anjala-Beegum_Logistics-and-Outreach-Team.avif" alt="Anjala Beegum - Logistics and Outreach" loading="lazy" />
+              <div class="execom-card__info">
+                <div class="execom-card__name">Anjala Beegum</div>
+                <div class="execom-card__role">Logistics and Outreach</div>
+              </div>
+            </div>
+            <div class="execom-card">
+              <img class="execom-card__photo" src="./assets/execom/Logistics-and-Outreach-Team/Aswin-Krishnan-K-A_Logistics-and-Outreach-Team.avif" alt="Aswin Krishnan K A - Logistics and Outreach" loading="lazy" />
+              <div class="execom-card__info">
+                <div class="execom-card__name">Aswin Krishnan K A</div>
+                <div class="execom-card__role">Logistics and Outreach</div>
+              </div>
+            </div>
+            <div class="execom-card">
+              <img class="execom-card__photo" src="./assets/execom/Logistics-and-Outreach-Team/Dilsha-N_Logistics-and-Outreach-Team.avif" alt="Dilsha N - Logistics and Outreach" loading="lazy" />
+              <div class="execom-card__info">
+                <div class="execom-card__name">Dilsha N</div>
+                <div class="execom-card__role">Logistics and Outreach</div>
+              </div>
+            </div>
+            <div class="execom-card">
+              <img class="execom-card__photo" src="./assets/execom/Logistics-and-Outreach-Team/Krishnamurali_Logistics-and-Outreach-Team.avif" alt="Krishnamurali - Logistics and Outreach" loading="lazy" />
+              <div class="execom-card__info">
+                <div class="execom-card__name">Krishnamurali</div>
+                <div class="execom-card__role">Logistics and Outreach</div>
+              </div>
+            </div>
+            <div class="execom-card">
+              <img class="execom-card__photo" src="./assets/execom/Logistics-and-Outreach-Team/Madhav-Raj_Logistics-and-Outreach-Team.avif" alt="Madhav Raj - Logistics and Outreach" loading="lazy" />
+              <div class="execom-card__info">
+                <div class="execom-card__name">Madhav Raj</div>
+                <div class="execom-card__role">Logistics and Outreach</div>
+              </div>
+            </div>
+            <div class="execom-card">
+              <img class="execom-card__photo" src="./assets/execom/Logistics-and-Outreach-Team/Malavika-C-Raj_Logistics-and-Outreach-Team.avif" alt="Malavika C Raj - Logistics and Outreach" loading="lazy" />
+              <div class="execom-card__info">
+                <div class="execom-card__name">Malavika C Raj</div>
+                <div class="execom-card__role">Logistics and Outreach</div>
+              </div>
+            </div>
+            <div class="execom-card">
+              <img class="execom-card__photo" src="./assets/execom/Logistics-and-Outreach-Team/Sreenath-P-S_Logistics-and-Outreach-Team.avif" alt="Sreenath P S - Logistics and Outreach" loading="lazy" />
+              <div class="execom-card__info">
+                <div class="execom-card__name">Sreenath P S</div>
+                <div class="execom-card__role">Logistics and Outreach</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================
+         CONTACT
+         ================================================ -->
+    <section class="section contact-section" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <p class="section-label reveal" aria-hidden="true">Contact</p>
+        <h2 class="section-title reveal" id="contact-heading">Get in Touch</h2>
+
+        <div class="contact-grid">
+          <!-- Contact info -->
+          <div class="reveal">
+            <p class="contact-info__intro">
+              Reach out to the Training and Placement Cell for placement inquiries,
+              industry collaborations, or student support. We are here to help.
+            </p>
+
+            <!-- Principal -->
+            <div class="contact-person">
+              <div class="contact-person__name">Dr. Jaya V L</div>
+              <div class="contact-person__role">Principal, College of Engineering, Cherthala</div>
+              <div class="contact-person__links">
+                <a href="tel:+918547005038" class="contact-link" aria-label="Call Dr. Jaya V L">
+                  <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" width="16" height="16">
+                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328z"/>
+                  </svg>
+                  +91 85470 05038
+                </a>
+              </div>
+            </div>
+
+            <!-- TPO -->
+            <div class="contact-person">
+              <div class="contact-person__name">Mrs. Elizwa Laiju</div>
+              <div class="contact-person__role">Training and Placement Officer</div>
+              <div class="contact-person__links">
+                <a href="mailto:placementcell@cectl.ac.in" class="contact-link" aria-label="Email the placement cell">
+                  <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" width="16" height="16">
+                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.708 2.825L15 11.105V5.383zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741zM1 11.105l4.708-2.897L1 5.383v5.722z"/>
+                  </svg>
+                  placementcell@cectl.ac.in
+                </a>
+                <a href="tel:+917025300015" class="contact-link" aria-label="Call the placement officer">
+                  <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" width="16" height="16">
+                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328z"/>
+                  </svg>
+                  +91 70253 00015
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Map + address -->
+          <div class="contact-visual reveal reveal-delay-2">
+            <div class="contact-map-placeholder">
+              <!-- Correct college location: https://maps.app.goo.gl/vNw4ELg2cSCQTReW8 -->
+              <iframe
+                src="https://maps.google.com/maps?q=College+of+Engineering+Cherthala,+Pallippuram,+Cherthala,+Kerala&z=16&output=embed"
+                title="College of Engineering Cherthala location on Google Maps"
+                allowfullscreen
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            <div class="college-address">
+              <div class="college-address__name">College of Engineering, Cherthala</div>
+              <p class="college-address__text">
+                Pallippuram, Cherthala<br />
+                Alappuzha, Kerala - 688 541<br />
+                India
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================
+         FOOTER
+         ================================================ -->
+    <footer class="footer" role="contentinfo">
+      <div class="footer__inner">
+        <div class="footer__left">
+          <img class="footer__logo" src="./assets/tpc-logo.avif" alt="TPC logo" width="28" height="28" />
+          <p class="footer__copy">
+            &copy; <span id="footer-year">2026</span> Training &amp; Placement Cell,
+            College of Engineering, Cherthala. All rights reserved.
+          </p>
+        </div>
+        <div class="footer__right">
+          <a href="https://cectl.ac.in" target="_blank" rel="noopener" style="color: inherit;">cectl.ac.in</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ================================================
+         LIGHTBOX
+         ================================================ -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+      <button class="lightbox__close" id="lightbox-close" aria-label="Close image viewer">&times;</button>
+      <img class="lightbox__img" id="lightbox-img" src="" alt="" />
+    </div>
+
+    <script src="./main.js" defer></script>
+  </body>
+</html>
