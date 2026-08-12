@@ -341,19 +341,21 @@ button {
 
 .drawer-close {
   position: absolute;
-  top: var(--space-6);
+  top: var(--space-12);
   right: var(--space-6);
-  font-size: 1.5rem;
-  color: var(--color-muted);
+  font-size: 3rem;
+  color: var(--color-white);
   background: none;
   border: none;
   cursor: pointer;
   transition: color var(--dur-fast) var(--ease);
   line-height: 1;
+  z-index: 100;
+  padding: var(--space-2);
 }
 
 .drawer-close:hover {
-  color: var(--color-white);
+  color: var(--color-accent);
 }
 
 /* ===================================================
@@ -409,7 +411,7 @@ button {
 .hero__badge {
   display: inline-flex;
   align-items: center;
-  margin-bottom: var(--space-2);
+  margin-bottom: var(--space-3);
   padding: 6px 16px;
   animation: heroFadeUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
   animation-delay: 0.05s;
@@ -1273,6 +1275,15 @@ button {
     --nav-h: 64px;
   }
 
+  .navbar__name {
+    white-space: normal;
+    font-size: 0.75rem;
+  }
+
+  .navbar__sub {
+    font-size: 0.65rem;
+  }
+
   .navbar__links,
   .navbar__cta {
     display: none;
@@ -1333,6 +1344,14 @@ button {
 }
 
 @media (max-width: 480px) {
+  .execom-cards {
+    gap: var(--space-3);
+  }
+
+  .execom-card {
+    width: calc(50% - (var(--space-3) / 2));
+  }
+
   .gallery-grid {
     columns: 1;
   }
