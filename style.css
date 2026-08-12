@@ -628,6 +628,7 @@ button {
 
 .about-text p {
   font-size: 1.0625rem;
+  text-align: justify;
   line-height: 1.75;
   color: rgba(255,255,255,0.72);
   margin-bottom: var(--space-5);
@@ -685,6 +686,7 @@ button {
 
 .tpo-card__body {
   padding: var(--space-8);
+  text-align: justify;
 }
 
 .tpo-card__quote {
@@ -1052,6 +1054,7 @@ button {
   font-size: 1.0625rem;
   color: rgba(255,255,255,0.65);
   line-height: 1.7;
+  text-align: justify;
   margin-bottom: var(--space-8);
 }
 
